@@ -1,6 +1,4 @@
 #include "main.h"
-#include <stdargs.h> /*Include necessary header for va_list*/
-#include <stdarg.h>
 
 /**
  * print_buffer - Prints the contents of the buffer if it exists
@@ -21,7 +19,6 @@ void print_buffer(char buffer[], int *buff_ind);
  * function, handling various conversion specifiers and printing characters
  * accordingly.
  */
-
 int _printf(const char *format, ...)
 {
 	if (format == NULL)
@@ -50,6 +47,7 @@ int _printf(const char *format, ...)
 			/*
 			 * Process format specifier
 			 */
+
 			int flags = get_flags(format, &i);
 			int width = get_width(format, &i, list);
 			int precision = get_precision(format, &i, list);
@@ -84,8 +82,11 @@ int _printf(const char *format, ...)
 
 /**
  * print_buffer - Prints the contents of the buffer if it exists
- * @buffer: Array of characters
+ * @buffer: Array of characters to print
  * @buff_ind: Index at which to add the next character, represents the length.
+ *
+ * Description: This function prints the characters stored in the buffer
+ * up to the given index (buff_ind).
  */
 void print_buffer(char buffer[], int *buff_ind)
 {
@@ -95,4 +96,3 @@ void print_buffer(char buffer[], int *buff_ind)
 	*buff_ind = 0;
 }
 
-/* ... (additional function definitions) */
