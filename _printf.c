@@ -1,12 +1,7 @@
 #include "main.h"
-<<<<<<< HEAD
-=======
 #include <stdargs.h> /*Include necessary header for va_list*/
-=======
 #include <stdarg.h>
->>>>>>> 5f8a182210d2c67b228c656859adae3a02d27af7
 
->>>>>>> ccccfc44b37598ac236980214c6a99765823da06
 /**
  * print_buffer - Prints the contents of the buffer if it exists
  * @buffer: Array of characters to print
