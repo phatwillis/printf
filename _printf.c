@@ -1,5 +1,9 @@
 #include "main.h"
 #include <stdargs.h> /*Include necessary header for va_list*/
+=======
+#include <stdarg.h>
+
+>>>>>>> ccccfc44b37598ac236980214c6a99765823da06
 /**
  * print_buffer - Prints the contents of the buffer if it exists
  * @buffer: Array of characters
